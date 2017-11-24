@@ -4,12 +4,13 @@ import java.util.Scanner;
 public class CalcSwitch {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String[] arr = new String[5];
-		arr[0] = "첫번째 숫자를 입력하세요!\n";
-		arr[1] = "연산자를 입력하세요!\n";
-		arr[2] = "두번째 숫자를 입력하세요!\n";
-		arr[3] = "연산자만 입력하세요!\n";
-		arr[4] = "%";
+		String[] arr = {
+				"첫번째 숫자를 입력하세요!\n",
+				"연산자를 입력하세요!\n",
+				"두번째 숫자를 입력하세요!\n",
+				 "연산자만 입력하세요!\n",
+				 "%d %s %d = %d"
+		};
 		int no1 = 0, no2 = 0, end = 0;
 		String op = "";
 		boolean ok = true;
@@ -37,7 +38,7 @@ public class CalcSwitch {
 		if(!ok) {
 				System.out.print(arr[3]);
 		}else {
-			System.out.printf("%d %s %d = %d", no1, op, no2, end);	
+			System.out.printf(arr[4], no1, op, no2, end);	
 		}
 	}
 }

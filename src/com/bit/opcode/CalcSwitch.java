@@ -11,8 +11,8 @@ public class CalcSwitch {
 				 "연산자만 입력하세요!\n",
 				 "%d %s %d = %d"
 		};
-		int no1 = 0, no2 = 0, end = 0;
 		String op = "";
+		int no1 = 0, no2 = 0, end = 0;
 		boolean ok = true;
 		System.out.print(arr[0]);
 		no1 = scanner.nextInt();
@@ -21,7 +21,7 @@ public class CalcSwitch {
 		System.out.print(arr[2]);
 		no2 = scanner.nextInt();
 		switch(op) {
-		case "+": end = no1 + no2;
+		case "+" : end = no1 + no2;
 			break;
 		case "-": end = no1 - no2;
 			break;

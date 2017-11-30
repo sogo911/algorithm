@@ -9,14 +9,15 @@ BMI 지수
 저체중 : 18.5 미만 
 */
 import java.util.Scanner;
-public class Bmi {
-	public static void main(String[] args) {
+public class BmiWhile {
+	public void main() {
 		Scanner a = new Scanner(System.in);
 		String res = "";
 		int d = 0;
 		System.out.println("측정하실 인원을 입력하세요.");
 		d = a.nextInt();
-		for(int i = 0; i < d; i++) {
+		int i = 0;
+		while(i < d) {
 			Scanner s = new Scanner(System.in);
 			double h = 0, w = 0, b = 0;
 			String name = "", bmi = "";
@@ -41,7 +42,8 @@ public class Bmi {
 				bmi = "저체중 입니다.";
 			}else {
 				bmi = "다시 입력해주세요.";
-			}	
+			}
+			i++;
 			res += String.format("%s님의 상태는 %s \n",name,bmi);
 		}
 		System.out.print(res);

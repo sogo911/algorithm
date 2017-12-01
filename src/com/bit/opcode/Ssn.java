@@ -5,12 +5,17 @@ import java.util.Scanner;
 public class Ssn {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		String[] arr = {
+		String[] arr = new String[4];
+				arr[0] = "이름을 입력하세요 : ";
+				arr[1] = "주민번호를 - 까지 포함하여 입력하세요 : ";
+				arr[2] = "남자,여자,외국인";
+				arr[3] = "다시 입력하세요";
+		/*String[] arr = {
 				"이름을 입력하세요 : ",
 				"주민번호를 - 까지 포함하여 입력하세요 : ",
 				"남자","여자","외국인",
 				"다시 입력하세요"
-		};
+		};*/
 		boolean p = true ;
 		String name = "", ssn = "", gender = "", test = "";
 		System.out.print(arr[0]);
